@@ -1,0 +1,15 @@
+————————————————————————————————————
+                                                         kiki 2018/11/25
+————————————————————————————————————
+本电脑中的python，利用Anaconda进行第三方库管理，但是python本身有着自己的包管理系统，这两个系统当初没有统一，导致有两个库文件夹，python程序运行时，可能找不到一些库文件。
+————————————————————————————————————
+python中的路径为
+C:\Users\kiki\AppData\Local\Programs\Python\Python35\Lib\site-packages
+————————————————————————————————————
+Anaconda中的路径为
+W:\work_place\Anaconda\Lib\site-packages
+————————————————————————————————————
+本电脑默认的路径为python的，则需要使用anaconda内库的时候，需要在文件开头添加动态路径，代码如下：
+import sys
+sys.path.append(r'W:\work_place\Anaconda\Lib\site-packages')
+————————————————————————————————————
