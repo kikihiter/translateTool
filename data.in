@@ -1,0 +1,26 @@
+﻿As shown in Table 3, our model achieves better performance in opinion words
+extraction. Although our sentiment classification accuracy is a little worsen than
+SA-LSTM-P, it significantly improves result of opinion words extraction.
+4.4 Case studies
+To further show the advantages of our model, we visualize some examples from
+test data. As we can see from the first example in Figure 3(a), the model suc-
+cessfully extracts opinion words in the sentence and distinguishes influence of
+different opinion words towards different aspects for sentiment polarity classi-
+fication. Second example in Figure 3(b) shows that when no explicit opinion
+word for aspect, model captures semantic information from context and classify
+correctly.
+And we also analyze error. Model misunderstands latent sentiment occurring
+in sentences. It seems difficult to recognize the sentiment in sentences without
+obvious or usual expression in Figure 3(c) and Figure 3(d).
+5 Conclusion
+In this work, we propose a hierarchical model of reviews for joint aspect-level
+sentiment classification and word-level opinion extraction. The key idea is to
+learn semantic information from two level LSTMs for opinion word extraction
+and sentiment classification respectively. Experiments on two datasets verify
+that the proposed approach achieves a comparable result in sentiment polarity
+classification and makes a significant improvement in extraction at word level.
+Acknowledgements
+We thank the anonymous reviewers for their valuable suggestions. This work
+was supported by the National Natural Science Foundation of China (NSFC)
+via grant 61632011, 61772153 and 71490722.
+References
